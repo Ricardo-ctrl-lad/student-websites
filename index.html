@@ -52,7 +52,6 @@
     </div>
 
     <script>
-        // Student numbers and hashed passwords (hashed using MD5)
         var studentPasswords = {
             "student1": "e4fd3164528bf170eb331329d1aebf83",
             "student2": "048118e265406bedd3fb3d502dbc8b2c",
@@ -86,26 +85,33 @@
             "student30": "9fca3d34a3e403a8c5bdb65448514792",
             "student31": "7260a7f2fec3fb743b46244a05170006"
         };
-
+    
         async function md5(string) {
             const msgBuffer = new TextEncoder().encode(string);
             const hashBuffer = await crypto.subtle.digest("MD5", msgBuffer);
             const hashArray = Array.from(new Uint8Array(hashBuffer));
             return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
         }
-
+    
         async function login() {
             var studentNumber = document.getElementById("studentNumber").value;
             var password = document.getElementById("password").value;
+    
+            if (!studentNumber || !password) {
+                alert("Please enter both student number and password.");
+                return;
+            }
+    
             var hashedPassword = await md5(password);
-
+    
             if (studentPasswords[studentNumber] && studentPasswords[studentNumber] === hashedPassword) {
-                window.location.href = studentNumber + "/index.html"; 
+                window.location.href = studentNumber + "/index.html";
             } else {
                 alert("Incorrect student number or password!");
             }
         }
     </script>
+    
 
 </body>
 </html>
