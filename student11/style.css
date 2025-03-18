@@ -1,0 +1,268 @@
+h1{
+    color:navy ;
+    font: size 40px;
+    font-family:cursive  ; 
+    text-align:center  ;
+}
+
+p{
+    font-family:cursive ;
+    color:darkblue ;
+    font-size:large ;
+    text-align:center  ;
+}
+
+body{
+    background:whitesmoke ;
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+    p2{
+        font-family:cursive;
+        font-size: 15pt;
+        color:#081677ea;
+        text-align: center;
+    }
+    
+    h2{
+        color:navy;
+        font-size: 30pt;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        text-align: center;
+    }
+       
+    * {
+        /* Change the 1 to a 0 to hide the light blue guides */
+        outline: 0px solid lightblue !important;
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    /* End of responsive flow code */
+    
+    .callout-item {
+        /* This will style the entire item box */
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+    }
+    
+    .callout-title {
+        /* This will style the title of the item box */
+        color:darkblue;
+    }
+    
+    .callout-poster{
+        /* This will style the image inside the item box */
+        max-width: 300px;
+    }
+    
+    .callout-description{
+        /* This will style the right-hand-side of the item box */
+        padding: 10px;
+    }p2{
+        font-family:cursive;
+        font-size: 15pt;
+        color:navy#A38D6B;
+        text-align: center;
+    }
+    
+    h2{
+        color: #FB7AFF;
+        font-size: 30pt;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        text-align: center;
+    }
+       
+    * {
+        /* Change the 1 to a 0 to hide the light blue guides */
+        outline: 0px solid lightblue !important;
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    /* End of responsive flow code */
+    
+    .callout-item {
+        /* This will style the entire item box */
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+    }
+    
+    .callout-title {
+        /* This will style the title of the item box */
+        color:navy;
+    }
+    
+    .callout-poster{
+        /* This will style the image inside the item box */
+        max-width: 300px;
+    }
+    
+    .callout-description{
+        /* This will style the right-hand-side of the item box */
+        padding: 10px;
+    }p2{
+        font-family:cursive;
+        font-size: 15pt;
+        color: #21008e;
+        text-align: center;
+    }
+    
+    h2{
+        color: rgba(255, 255, 255, 0.968), 255, 255);
+        font-size: 30pt;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        text-align: center;
+    }
+       
+    * {
+        /* Change the 1 to a 0 to hide the light blue guides */
+        outline: 0px solid lightblue !important;
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    /* End of responsive flow code */
+    
+    .callout-item {
+        /* This will style the entire item box */
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+    }
+    
+    .callout-title {
+        /* This will style the title of the item box */
+        color:navy;
+    }
+    
+    .callout-poster{
+        /* This will style the image inside the item box */
+        max-width: 300px;
+    }
+    
+    .callout-description{
+        /* This will style the right-hand-side of the item box */
+        padding: 10px;
+    }p2{
+        font-family:cursive;
+        font-size: 15pt;
+        color: #0f0085bf;
+        text-align: center;
+    }
+    
+    h2{
+        color:whitesmoke;
+        font-size: 30pt;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        text-align: center;
+    }
+       
+    * {
+        /* Change the 1 to a 0 to hide the light blue guides */
+        outline: 0px solid lightblue !important;
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    /* End of responsive flow code */
+    
+    .callout-item {
+        /* This will style the entire item box */
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+    }
+    
+    .callout-title {
+        /* This will style the title of the item box */
+        color:navy;
+    }
+    
+    .callout-poster{
+        /* This will style the image inside the item box */
+        max-width: 300px;
+    }
+    
+    .callout-description{
+        /* This will style the right-hand-side of the item box */
+        padding: 10px;
+    }p2{
+        font-family:cursive;
+        font-size: 15pt;
+        color: #0009ac8a;
+        text-align: center;
+    }
+    
+    h2{
+        color: #ffffffeb;
+        font-size: 30pt;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        text-align: center;
+    }
+       
+    * {
+        /* Change the 1 to a 0 to hide the light blue guides */
+        outline: 0px solid lightblue !important;
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    /* End of responsive flow code */
+    
+    .callout-item {
+        /* This will style the entire item box */
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+    }
+    
+    .callout-title {
+        /* This will style the title of the item box */
+        color:navy;
+    }
+    
+    .callout-poster{
+        /* This will style the image inside the item box */
+        max-width: 300px;
+    }
+    
+    .callout-description{
+        /* This will style the right-hand-side of the item box */
+        padding: 10px;
+    }

@@ -1,0 +1,82 @@
+h1{
+    color:rgb(84, 149, 202);
+    font-size:xx-large;
+    font-family:sans-serif ; 
+    text-align:center ;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif ;
+    color:rgb(117, 158, 204) ;
+    font-size:x-large ;
+    text-align:center  ;
+}
+
+body{
+    background:rgb(197, 214, 230) ;
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:sans-serif;
+    font-size: 15pt;
+    color: #577fb3;
+    text-align: center;
+}
+
+h2{
+    color: #FB7AFF;
+    font-size: 30pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color:#b4c9e9;
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:rgb(62, 116, 167);
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}

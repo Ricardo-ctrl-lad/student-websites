@@ -1,0 +1,84 @@
+h1{
+    color:hotpink ;
+    font-size:  60px;
+    font-family:'Times New Roman', Times, serif ; 
+    text-align:center  ;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif ;
+    color:lightpink;
+    font-size: 30px;
+    text-align:center  ;
+}
+
+body{
+    background:floralwhite ;
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+
+p2{
+    font-family:cursive;
+    font-size: 15pt;
+    color:white;
+    text-align: center;
+}
+
+h2{
+    color:aliceblue;
+    font-size: 30pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color:lightpink;
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:hotpink;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+   

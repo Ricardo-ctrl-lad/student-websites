@@ -1,0 +1,83 @@
+h1{
+    color:rgb(147, 207, 147) ;
+    font-size:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif ; 
+    text-align:center  ;
+}
+
+p{
+    font-family:cursive
+    color: blue ;
+    font-size:medium ;
+    text-align:center  ;
+}
+
+body{
+    background:rgb(248, 255, 248);
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    color: #000000;
+    text-align: center;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 30pt;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color:#bee2b9;
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:black;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+   

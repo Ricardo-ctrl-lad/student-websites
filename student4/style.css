@@ -1,0 +1,214 @@
+h1{
+    color:teal ;
+    font-size:xx-large ;
+    font-family:'Times New Roman', Times, serif  ;    
+    text-align:center  ;
+}
+
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif ;
+    color:saddlebrown ;
+    font-size:large ;
+    text-align:center  ;
+}
+
+body{
+    background:rgb(248, 244, 229) ;
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger ;
+    color:saddlebrown;
+    text-align: center;
+}
+
+h2{
+    color:black;
+    font-size: 30pt;
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline:black !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color: rgb(248, 244, 229) ;
+};
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:black;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger ;
+    color:saddlebrown;
+    text-align: center;
+}
+
+h2{
+    color:black;
+    font-size: 30pt;
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline:black !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color: rgb(248, 244, 229) ;
+};
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:black;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+
+
+
+This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger ;
+    color:saddlebrown;
+    text-align: center;
+}
+
+h2{
+    color:black;
+    font-size: 30pt;
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline:black !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color: rgb(248, 244, 229) ;
+};
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:black;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}

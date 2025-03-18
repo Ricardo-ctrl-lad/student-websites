@@ -1,0 +1,137 @@
+h1{
+    color:rgb(156, 116, 55) ;
+    font-size: ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ; 
+    text-align:center  ;
+}
+
+p{
+    font-family: ;
+    color:rgb(0, 0, 0) ;
+    font-size: ;
+    text-align:  ;
+}
+
+body{
+    background:azure ;
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:cursive;
+    font-size: 15pt;
+    color: #A38D6B;
+    text-align: center;
+}
+
+h2{
+    color:cadetblue;
+    font-size: 30pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color:#9cc5f5;
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:#A38D6B;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+p2{
+    font-family:cursive;
+    font-size: 15pt;
+    color: #A38D6B;
+    text-align: center;
+}
+
+h2{
+    color:cadetblue;
+    font-size: 30pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color:#9cc5f5;
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:#A38D6B;
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}

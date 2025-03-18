@@ -1,0 +1,84 @@
+h1 {
+    color: rgb(240, 68, 157);
+    font-size:xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(250, 118, 230, 0.864);
+    font-size: larger;
+    text-align:center;
+}
+
+body {
+    background: rgb(255, 232, 248);
+}
+
+
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info {
+
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+
+p2 {
+    font-family: cursive;
+    font-size: 15pt;
+    color: #ffa04e;
+    text-align: center;
+}
+
+h2 {
+    color: #5effdc;
+    font-size: 30pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color: #fbdeaf;
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color: rgb(255, 120, 136);
+}
+
+.callout-poster {
+    /* This will style the image inside the item box */
+    max-width: 300px;
+}
+
+.callout-description {
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+

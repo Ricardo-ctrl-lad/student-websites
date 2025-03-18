@@ -1,0 +1,151 @@
+h1{
+    color:pink ;
+    font-size:60px ;
+    font-family:cursive  ; 
+    text-align:center  ;
+}
+
+p{
+    font-family:'Courier New', Courier, monospace ;
+    color:dimgrey ;
+    font:size 40px ; 
+    text-align:center  ;
+    
+}
+
+body{
+    background:rgb(255, 248, 249) ;
+}
+
+    
+/* This code will make your items flow responsively */
+
+.callout-item {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.callout-info{
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+
+}
+   
+
+
+
+/* ------ PROFILE
+
+
+
+p2{
+    font-family:cursive;
+    font-size: 15pt;
+    color: #A38D6B;
+    text-align: center;
+}
+
+h2{
+    color: #FB7AFF;
+    font-size: 30pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 20px;
+    background-color:#ffefef;
+    font-family:'Courier New', Courier, monospace
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:rgb(255, 193, 193);
+    text-align: center;
+    font-family:cursive
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 350px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}
+
+
+/* ------ PROFILE
+
+
+
+p2{
+    font-family:cursive;
+    font-size: 15pt;
+    color: #A38D6B;
+    text-align: center;
+}
+
+h2{
+    color: #FB7AFF;
+    font-size: 30pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+   
+* {
+    /* Change the 1 to a 0 to hide the light blue guides */
+    outline: 0px solid lightblue !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End of responsive flow code */
+
+.callout-item {
+    /* This will style the entire item box */
+    margin-bottom: 25px;
+    background-color:#ffefef;
+    font-family:'Courier New', Courier, monospace
+}
+
+.callout-title {
+    /* This will style the title of the item box */
+    color:rgb(255, 193, 193);
+    text-align: center;
+    font-family:cursive
+}
+
+.callout-poster{
+    /* This will style the image inside the item box */
+    max-width: 350px;
+}
+
+.callout-description{
+    /* This will style the right-hand-side of the item box */
+    padding: 10px;
+}

@@ -1,0 +1,100 @@
+/* Style for heading */
+h1 {
+    color: rgb(255, 180, 209);
+    font-size: 90px;
+    /* Corrected the font-size declaration */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
+    text-align: center;
+}
+
+/* Style for paragraphs */
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 228, 241);
+    font-size: x-large;
+    text-align: center;
+}
+
+/* p2 tag styling (not valid HTML tag, better to use p or another valid tag) */
+p2 {
+    font-family: cursive;
+    font-size: 20pt;
+    color: hsl(319, 100%, 95%);
+    text-align: center;
+}
+
+/* Style for h2 */
+h2 {
+    color: #fccfed;
+    font-size: 30px;
+    /* Corrected font size */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Universal selector */
+* {
+    outline: 0px solid lightblue !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Styling for the item boxes */
+.callout-item {
+    margin-bottom: 20px;
+    background-color: #ffb9e4;
+}
+
+/* Styling for the title of the item box */
+.callout-title {
+    color: rgb(255, 255, 255);
+}
+
+/* Styling for the image inside the item box */
+.callout-poster {
+    width: 400px;
+    /* Set a fixed width to ensure consistency */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Styling for the text section of the item box */
+.callout-description {
+    padding: 10px;
+}
+
+/* Flexbox layout for the image and text container */
+.callout-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Allow text to fill remaining space */
+.callout-description {
+    flex: 1;
+}
+/* Styling for the item boxes */
+.callout-item {
+    margin-bottom: 20px;
+    background-color: #ffb9e4;
+    width: 80%;   /* Make the box 80% of the parent container's width */
+    max-width: 700px; /* Increase max-width to allow the box to be wider */
+    margin-left: auto;
+    margin-right: auto; /* Centers the boxes horizontally */
+}
+
+/* Styling for the image inside the item box */
+.callout-poster {
+    width: 200px; /* Increase the image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the text section of the item box */
+.callout-description {
+    padding: 10px;
+    flex: 1;
+    width:
