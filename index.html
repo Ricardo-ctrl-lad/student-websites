@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+</head>
+<body>
+    <h2>Enter Student Number and Password</h2>
+    <input type="text" id="studentNumber" placeholder="Student Number">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <script>
+        var studentPasswords = {
+            "student1": "pass1",
+            "student2": "pass2",
+            "student3": "pass3"
+        };
+
+        function login() {
+            var studentNumber = document.getElementById("studentNumber").value.toLowerCase();
+            var password = document.getElementById("password").value;
+
+            if (studentPasswords[studentNumber] && studentPasswords[studentNumber] === password) {
+                window.location.href = studentNumber + "/index.html"; 
+            } else {
+                alert("Incorrect student number or password!");
+            }
+        }
+    </script>
+</body>
+</html>
