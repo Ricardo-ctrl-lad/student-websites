@@ -26,9 +26,10 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
+            text-align: center;
         }
         button {
-            background: #28a745;
+            background: #007bff;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -37,7 +38,7 @@
             cursor: pointer;
         }
         button:hover {
-            background: #218838;
+            background: #0056b3;
         }
         h2 {
             color: #333;
@@ -48,75 +49,23 @@
 
     <div class="container">
         <h2>Students Websites</h2>
-        <p>Enter your student number and code:</p>
-        <input type="text" id="studentNumber" placeholder="Student Number">
-        <input type="password" id="password" placeholder="Code">
+        <p>Enter your student number (1 - 31):</p>
+        <input type="number" id="studentNumber" min="1" max="31" placeholder="Enter number">
         <button onclick="enterWebsite()">Enter Website</button>
     </div>
 
     <script>
-        // MD5 Hash Function (Fixes the Issue)
-        function md5(string) {
-            return CryptoJS.MD5(string).toString();
-        }
-
-        // Student numbers with MD5-encoded 4-digit passwords
-        var studentPasswords = {
-            "2110": "f75526659f31040afeb61cb7133e4e6d",
-            "9565": "0c12278389532e91c601af4c8adef7fc",
-            "7114": "659b7b42e9c002ce0075077cd55a1623",
-            "6215": "a3fc981af450752046be179185ebc8b5",
-            "4414": "d26e5e36c1b0b620407eadabb6c0c5c2",
-            "3213": "589f763b060f8c19170cdf5196e2bf87",
-            "4643": "731ae30af8750c2d28720ea3c1f8c2b1",
-            "1642": "516341c3e8f4543c8d465b0c514a6f92",
-            "9976": "4b85256c4881edb6c0776df5d81f6236",
-            "4554": "99c83c904d0d64fbef50d919a5c66a80",
-            "7893": "be6c7b094f88532b6c6b35bbcd525ee8",
-            "3592": "cd0dce8fca267bf1fb86cf43e18d5598",
-            "4244": "29ddbdb402491a6aa97964a8139a1356",
-            "6035": "973a5f0ccbc4ee3524ccf035d35b284b",
-            "9590": "d5036c64412973d610202be8dce2b82a",
-            "6203": "65cf25ef90de99d93fa96dc49d0d8b3c",
-            "4072": "752356ce55e0b436a9027914cb7e18a7",
-            "3114": "a2b8a85a29b2d64ad6f47275bf1360c6",
-            "9158": "6a2feef8ed6a9fe76d6b3f30f02150b4",
-            "3089": "5a2756a3cb9cde852cad3c97e120b656",
-            "6483": "7716d0fc31636914783865d34f6cdfd5",
-            "3898": "a554f89dd61cabd2ff833d3468e2008a",
-            "4243": "05ec04f7fb3bc3281f1db83bfc1a2490",
-            "9629": "d5b3d8dadd770c460b1cde910a711987",
-            "4494": "bf2fe6582ed9ead9161a3d6f6b1d6858",
-            "8185": "996009f2374006606f4c0b0fda878af1",
-            "4565": "e25cfa90f04351958216f97e3efdabe9",
-            "1541": "d0aa518d4d3bfc721aa0b8ab4ef32269",
-            "6060": "155fa09596c7e18e50b58eb7e0c6ccb4",
-            "2883": "1980fa3bbff704c8bec1b7196cf7dfbc",
-            "4321": "ae3f58a127f6c1f12c4942432d1f246a"
-        };
-
-
         function enterWebsite() {
-            var studentNumber = document.getElementById("studentNumber").value.trim().toLowerCase();
-            var password = document.getElementById("password").value.trim();
-            
-            if (!studentNumber || !password) {
-                alert("Please enter both student number and code.");
+            var studentNumber = document.getElementById("studentNumber").value.trim();
+
+            if (!studentNumber || studentNumber < 1 || studentNumber > 31) {
+                alert("Please enter a valid student number between 1 and 31.");
                 return;
             }
 
-            var hashedPassword = md5(password);
-
-            if (studentPasswords[studentNumber] && studentPasswords[studentNumber] === hashedPassword) {
-                window.location.href = studentNumber + "/index.html";
-            } else {
-                alert("Incorrect student number or code.");
-            }
+            window.location.href = studentNumber + "/index.html";
         }
     </script>
-
-    <!-- Include CryptoJS for MD5 hashing -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
 </body>
 </html>
