@@ -4,30 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h2>Enter Student Number and Password</h2>
-    <input type="text" id="studentNumber" placeholder="Student Number">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="login()">Login</button>
+
+    <div class="login-container">
+        <h2>Student Login</h2>
+        <p>Enter your student number and password:</p>
+        <input type="text" id="studentNumber" placeholder="Student Number">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
 
     <script>
+        // Student numbers and hashed passwords (hashed using MD5)
         var studentPasswords = {
-            "student1": "pass1",
-            "student2": "pass2",
-            "student3": "pass3"
+            "student1": "e4fd3164528bf170eb331329d1aebf83",
+            "student2": "048118e265406bedd3fb3d502dbc8b2c",
+            "student3": "8bbaf53baf3ed830d93392e5a5cce7f4",
+            "student4": "1a57c646ca9e8a9c0ca76949d5f8f8e9",
+            "student5": "73a3cc2075ba2513b5628f3393bab2f9",
+            "student6": "244497af53f998fd222ef9333c96b1e3",
+            "student7": "841220e6d65514e768c6455d88292097",
+            "student8": "771de5a8abc1ed6e69a772d9e06b450f",
+            "student9": "560c1676da9fc3c915d537f33439a6fe",
+            "student10": "5a0a468bbabd99b8164c3b399cf94a62",
+            "student11": "71191b28314ca7714a7d40165e8a42c4",
+            "student12": "af179796df8ab2427cfd08f08c49658e",
+            "student13": "cbba80f78ca17d4376d5bb353dfee055",
+            "student14": "8fd88ee73406d2bd9b1c147b0aeb03b1",
+            "student15": "4736b604285f192e5f2ea07cc64ff825",
+            "student16": "8998c95b00439d39a2194bafc269776c",
+            "student17": "a9b77f9cc7e27ede4d8324d888e080f4",
+            "student18": "e811037744191ade442349ddf329ac01",
+            "student19": "12727b6672c37d86e61432a3b994241a",
+            "student20": "95090723bc80e1cdee66a588572440f8",
+            "student21": "3dceac05d614b729d2a78942cab6ea67",
+            "student22": "8ef49a7959def595b44212bb99e626fa",
+            "student23": "14eeba90509f34dbdd4ac6d9348545fd",
+            "student24": "023dc66386f100746a0181a4df858ef3",
+            "student25": "0360867f167afa7e25725c529242c8d1",
+            "student26": "42083402fec8cac3ea16067d5340432a",
+            "student27": "93a2fcc710fe9b76edd2c1b1c64c16d7",
+            "student28": "b2bd14fc8c4384df8f36d1ec28cec2a3",
+            "student29": "f392201fa6453b95e51ac88105605666",
+            "student30": "9fca3d34a3e403a8c5bdb65448514792",
+            "student31": "7260a7f2fec3fb743b46244a05170006"
         };
 
-        function login() {
-            var studentNumber = document.getElementById("studentNumber").value.toLowerCase();
-            var password = document.getElementById("password").value;
+        async function md5(string) {
+            const msgBuffer = new TextEncoder().encode(string);
+            const hashBuffer = await crypto.subtle.digest("MD5", msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+        }
 
-            if (studentPasswords[studentNumber] && studentPasswords[studentNumber] === password) {
+        async function login() {
+            var studentNumber = document.getElementById("studentNumber").value;
+            var password = document.getElementById("password").value;
+            var hashedPassword = await md5(password);
+
+            if (studentPasswords[studentNumber] && studentPasswords[studentNumber] === hashedPassword) {
                 window.location.href = studentNumber + "/index.html"; 
             } else {
                 alert("Incorrect student number or password!");
             }
         }
     </script>
+
 </body>
 </html>
